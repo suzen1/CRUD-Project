@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-gray-500 flex items-center justify-center aline-center">
+        <form action="/create" method="post"  class=" p-8 rounded shadow-md flex flex-col bg-zinc-200 w-96 text-black">
+            <h1 class="flex justify-center aline-center text-[2vw] mb-4 font-bold ">Create User</h1>
+            <input type="text" placeholder="Enter your name" name="username"
+                class="font-bold border-[2px] border-gray-800 rounded p-2 outline-none mb-4 hover:border-blue-500  focus:ring-2 focus:ring-blue-500">
+            <input type="text" placeholder="Enter your Email" name="email"
+                class=" font-bold border-[2px] border-gray-800 rounded p-2 outline-none mb-4 hover:border-blue-500  focus:ring-2 focus:ring-blue-500">
+            <label for="">Add Your Profile Image</label>
+            <input type="url" placeholder="Enter your ImageUrl" name="ImageUrl"
+                class="font-bold border-[2px] border-gray-800 rounded p-2 outline-none mb-4 hover:border-blue-500  focus:ring-2 focus:ring-blue-500">
+            <input type="submit" value="Submit"
+                class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500  flex justify-center items-center">
+        </form>
+    </div>
+</body>
+
+</html>
